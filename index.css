@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+p {
+  color: #777;
+}
+
+/* ----header--- */
+
+#header {
+  background: url('./images/background.png') center/cover;
+  height: 100vh;
+}
+#header img {
+  width: 95px;
+  padding-top: 50px;
+}
+.container {
+  margin: 0 100px;
+}
+.header-text {
+  max-width: 345px;
+  margin-top: 70px;
+}
+.header-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.header-text p {
+  color: #777;
+}
+.common-btn {
+  padding: 12px 22px;
+  background-color: transparent;
+  border: 2px solid lightcoral;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 16px 0;
+  display: block;
+}
+.common-btn:hover {
+  color: white;
+  background-color: lightcoral;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: lightcoral;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.square {
+  height: 5px;
+  width: 16px;
+  background-color: lightcoral;
+  display: inline-block;
+  margin-top: 30px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: lightcoral;
+  height: 100vh;
+  width: 0;
+  z-index: 2;
+  transition: all 0.5s linear;
+}
+.show-nav {
+  width: 250px;
+}
+.nav-content {
+  padding: 25px 18px;
+}
+
+.nav-content li {
+  list-style: none;
+  margin-top: 35px;
+}
+.nav-content li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav ul {
+  margin-top: 30px;
+}
+.fa-solid {
+  color: #fff;
+  font-size: xx-large;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: lightcoral;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 14px;
+}
+
+/*======about===== */
+#about {
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-left-col {
+  width: 50%;
+}
+.about-right-col {
+  width: 50%;
+}
+.about-text {
+  /* max-width: 600px; */
+  margin-right: 100px;
+  text-align: right;
+}
+.about-left-col img {
+  width: 100%;
+}
+#about h2 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+#about h3 {
+  font-style: italic;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+#features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 100px 100px 20px;
+  flex-wrap: wrap;
+}
+.feature-col {
+  width: 29%;
+  text-align: center;
+}
+
+#features img {
+  width: 150px;
+  /* animation: move 3s infinite; */
+}
+
+/* @keyframes move {
+  0% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+} */
+
+#features h3 {
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+#features span {
+  display: block;
+  align-items: flex-end;
+}
+
+.design {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.design span {
+  margin: 5px;
+}
+
+/* course section */
+#course {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.course-left-col,
+.course-right-col {
+  width: 48%;
+}
+.course-right-col img {
+  width: 100%;
+}
+
+.course-left-col h2,
+p {
+  margin-bottom: 15px;
+  /* max-width: 400px; */
+}
+
+#Offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+#Offer .common-btn {
+  display: inline-block;
+  justify-content: end;
+}
+
+.offer-left-col {
+  width: 48%;
+}
+.offer-right-col {
+  width: 48%;
+  max-width: 500px;
+  text-align: right;
+  padding-right: 100px;
+  /* justify-self: self-end; */
+}
+.offer-right-col h2,
+p {
+  margin-bottom: 20px;
+}
+.offer-left-col img {
+  width: 100%;
+}
+
+/* =======contact====== */
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.contact-left-col {
+  width: 48%;
+  padding-left: 100px;
+  max-width: 425px;
+  text-align: left;
+}
+.contact-right-col {
+  width: 48%;
+}
+.contact-right-col img {
+  width: 100%;
+}
+
+#contact form input {
+  padding: 10px 100px 10px 5px;
+  display: block;
+  outline: none;
+  border: 2px solid lightcoral;
+  border-radius: 20px;
+  opacity: 0.6;
+  margin: 10px 0;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  /* line-height: 1.5; */
+}
+
+#contact .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-signup {
+  padding: 15px 50px 15px 20px;
+  border: 2px solid lightcoral;
+  background: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-signup:hover {
+  background: lightcoral;
+  color: #fff;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footer-left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 100px 0 50px;
+}
+
+.footer-left li {
+  list-style: none;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-left h3 {
+  margin-bottom: 20px;
+  color: lightcoral;
+}
+
+.container .footer-right {
+  width: auto;
+  display: flex;
+
+  align-items: flex-end;
+}
+.footer-right div {
+  margin: 10px;
+}
+
+.footer-right img {
+  width: 80px;
+}
+hr {
+  border-top: 2px solid #777;
+}
+
+.social {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.social img {
+  width: 25px;
+  margin: 20px 0 20px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  #header {
+    background: none;
+    height: 80vh;
+    /* padding-bottom: 10px; */
+  }
+
+  .container {
+    margin: 0 50px;
+  }
+  #about {
+    padding: 50px 0;
+    display: block;
+    align-items: center;
+  }
+  .about-left-col {
+    width: 100%;
+  }
+  .about-right-col {
+    width: 100%;
+  }
+  .about-text {
+    max-width: 600px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .about-left-col img {
+    width: 100%;
+  }
+  #about h2 {
+    font-size: 30px;
+    margin: 15px 0;
+  }
+  #about h3 {
+    font-style: italic;
+    font-size: 18px;
+    margin: 15px 0;
+    /* line-height: 1.5; */
+  }
+
+  #features {
+    display: block;
+    padding: 50px 50px 10px;
+  }
+  .feature-col {
+    width: 100%;
+    text-align: center;
+  }
+  .design {
+    padding-bottom: 60px;
+  }
+  /* course section */
+  #course {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+  }
+
+  .course-left-col,
+  .course-right-col {
+    width: 100%;
+  }
+  .course-right-col img {
+    width: 100%;
+  }
+
+  .course-left-col h2,
+  p {
+    margin-bottom: 15px;
+  }
+
+  #Offer {
+    display: block;
+    align-items: center;
+    padding: 50px 0;
+  }
+  #Offer .common-btn {
+    display: inline-block;
+    justify-content: end;
+  }
+
+  .offer-left-col {
+    width: 100%;
+  }
+  .offer-right-col {
+    width: 100%;
+    max-width: 500px;
+    text-align: right;
+    padding-right: 50px;
+    /* justify-self: self-end; */
+  }
+  .offer-right-col h2,
+  p {
+    margin: 20px 0 15px;
+  }
+  .offer-left-col img {
+    width: 100%;
+  }
+  #contact {
+    display: block;
+
+    padding-top: 50px;
+  }
+
+  .contact-left-col {
+    width: 100%;
+    padding: 50px 0 50px 50px;
+    max-width: 300px;
+  }
+
+  .contact-right-col {
+    width: 100%;
+  }
+  .contact-right-col img {
+    width: 100%;
+  }
+  .btn-signup {
+    padding: 10px 20px;
+    border: 2px solid lightcoral;
+    background: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  footer .container {
+    display: block;
+  }
+  .container .footer-left {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 40px 0 50px;
+  }
+
+  .footer-left .aboutUS,
+  .product,
+  .support,
+  .Explore {
+    width: 50%;
+  }
+
+  .footer-left li {
+    list-style: none;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #777;
+  }
+
+  .footer-left h3 {
+    margin: 20px 0 10px;
+    color: lightcoral;
+  }
+
+  .container .footer-right {
+    width: 100%;
+    display: block;
+
+    align-items: flex-end;
+  }
+  .footer-right div {
+    margin: 10px;
+  }
+
+  .footer-right img {
+    width: 80px;
+  }
+}
